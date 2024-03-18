@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('git-checkout') {
             steps {
-                git 'https://github.com/jaiswaladi246/secretsanta-generator.git'
+                git 'https://github.com/vamsinagam/secretsanta-generator.git'
             }
         }
 
@@ -91,7 +91,7 @@ pipeline {
                                     <p>Check the <a href="${BUILD_URL}">console output</a>.</p>
                                 </body>
                             </html>''',
-                    to: 'jaiswaladi246@gmail.com',
+                    to: 'vamsinagam8866@gmail.com',
                     from: 'jenkins@example.com',
                     replyTo: 'jenkins@example.com',
                     mimeType: 'text/html'
